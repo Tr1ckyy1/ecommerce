@@ -23,3 +23,8 @@ a {
 main {
   margin-top: 1.2rem;
 }
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
