@@ -1,0 +1,47 @@
+.product-data-container {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  position: relative;
+}
+
+.product-data-container h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.5rem;
+  font-size: 3.2rem;
+  white-space: nowrap;
+}
+.left-side {
+  width: 50%;
+  /* background: rgb(32, 238, 32); */
+  padding: 5rem 0;
+}
+
+.big-img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.small-images {
+  /* border: 10px solid red; */
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+.small-images > img {
+  cursor: pointer;
+  width: 22%;
+}
+.small-images > img:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+}
+.right-side {
+  width: 50%;
+  /* background: rgb(128, 128, 128, 0.2); */
+  background: rgb(197, 197, 160);
+}

@@ -1,0 +1,21 @@
+.item {
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  outline-offset: -2px;
+  padding: 1rem;
+  transition: all 0.15s ease-in;
+}
+.item:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.7);
+}
+.item img {
+  width: 100%;
+}
+
+.item p {
+  font-size: 2rem;
+}
+
+.item h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}

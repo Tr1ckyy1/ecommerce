@@ -1,0 +1,89 @@
+.luxury {
+  position: relative;
+  max-width: 1200px;
+
+  overflow: hidden;
+}
+
+.luxury p {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 4rem;
+  color: white;
+  font-weight: 600;
+}
+
+.luxury img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.homepage-section-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one two four" "one two four-low";
+  gap: 1.3rem;
+  height: 50rem;
+}
+
+.grid-one {
+  grid-area: one;
+}
+
+.grid-two {
+  grid-area: two;
+}
+
+.grid-four {
+  grid-area: four;
+}
+
+.grid-four-low {
+  grid-area: four-low;
+}
+
+@media (max-width: 750px) {
+  .homepage-section-1 {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "one two"
+      "four four-low";
+    grid-gap: 13px;
+    gap: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .homepage-section-1 p {
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .homepage-section-1 p {
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 2.5rem;
+  }
+}
