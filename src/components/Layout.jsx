@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./Layout.css";
 import Header from "./Header";
-import Newsletter from "./NewsLetter";
+import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 function Layout() {
   return (
