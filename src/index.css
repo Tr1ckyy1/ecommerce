@@ -12,17 +12,13 @@ html {
 
 body {
   font-family: "Blinker", sans-serif;
+  padding-inline: 5rem;
+  overflow-x: hidden;
 }
 
 a {
   color: unset;
   text-decoration: unset;
-}
-
-main {
-  margin-top: 14rem;
-  margin-bottom: 10rem;
-
 }
 
 button {
