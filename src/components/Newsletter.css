@@ -1,0 +1,34 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background: #191919;
+  padding-inline: 0;
+  margin-top: auto;
+}
+
+input {
+  font-family: inherit;
+  width: 22rem;
+}
+.newsletter h1 {
+  font-size: 3.8rem;
+  color: white;
+  font-weight: 600;
+}
+
+.newsletter form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+}
+.newsletter button,
+input {
+  font-size: 1.7rem;
+  padding: 0.7rem;
+  border: none;
+}

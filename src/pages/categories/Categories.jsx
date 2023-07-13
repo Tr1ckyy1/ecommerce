@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useItems } from "../../Context";
 import "./Categories.css";
 import { Link, useSearchParams } from "react-router-dom";
-import CategoriesItems from "./CategoriesItems";
+import RenderItems from "../../components/RenderItems";
 
 function Categories() {
   const [searchParams, setSearchParams] = useSearchParams("");
@@ -33,18 +33,19 @@ function Categories() {
   return (
     <section>
       <div className="display-top">
-        <Link to="..">&larr; Home</Link>
+        <Link
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          to=".."
+        >
+          &larr; Home
+        </Link>
         {windowWidth > 600 && <h1>{whichItems}</h1>}
         <select value={whichItems} onChange={handleFilterChange}>
           <option>{"All"}</option>
           {options}
         </select>
       </div>
-      <div className="all-items-container">
-        {filteredItems.map((item) => (
-          <CategoriesItems key={item.id} item={item} />
-        ))}
-      </div>
+      <RenderItems renderingItem={filteredItems} />
     </section>
   );
 }

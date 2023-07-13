@@ -6,6 +6,7 @@ const ItemsContext = createContext();
 function ItemsProvider({ children }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  console.log(windowWidth);
   useEffect(() => {
     function watchWidth() {
       setWindowWidth(window.innerWidth);

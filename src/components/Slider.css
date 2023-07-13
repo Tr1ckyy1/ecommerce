@@ -1,0 +1,105 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  margin-block: 10rem;
+}
+
+.top-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-side h1 {
+  font-size: 3rem;
+}
+
+.arrows {
+  display: flex;
+  gap: 0.5rem;
+}
+.arrows button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: none;
+  background: #373737;
+  color: white;
+  padding: 0.5rem;
+}
+.arrows button:hover {
+  background: black;
+}
+
+.bottom-side {
+  display: flex;
+  overflow-x: hidden;
+  gap: 2.2rem;
+  margin-top: 5rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.bottom-side::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.reel-item {
+  display: flex;
+  border: none;
+  flex-direction: column;
+  width: 215px;
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  outline-offset: -2px;
+  padding: 1.5rem;
+  transition: outline 0.2s ease-out;
+  height: 100%;
+  background: white;
+}
+
+.reel-item:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.reel-item p {
+  margin-top: auto;
+  font-size: 2rem;
+}
+
+.reel-item h1 {
+  font-size: 2.5rem;
+}
+.reel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .item {
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  outline-offset: -2px;
+  padding: 1.5rem;
+  transition: all 0.2s ease-out;
+  height: 100%;
+}
+.item:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.7);
+}
+.item img {
+  width: 100%;
+}
+
+.item p {
+  font-size: 2rem;
+  margin-top: auto;
+}
+
+.item h1 {
+  font-size: 2.5rem;
+}
+ */

@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Blinker", sans-serif;
-  padding-inline: 5rem;
 }
 
 a {
@@ -21,7 +20,9 @@ a {
 }
 
 main {
-  margin-top: 1.2rem;
+  margin-top: 14rem;
+  margin-bottom: 10rem;
+
 }
 
 button {
