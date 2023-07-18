@@ -8,19 +8,16 @@
 .display-top select {
   width: 100px;
   padding-inline: 5px;
-  border: none;
+  border: 1px solid transparent;
   background: rgba(128, 128, 128, 0.1);
   cursor: pointer;
   outline: none;
   font-size: 1.5rem;
+  color: black;
 }
 
 .display-top select:focus,
 .display-top select:active {
   background: none;
   border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-select {
-  color: black;
 }
