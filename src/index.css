@@ -24,7 +24,6 @@ button {
   cursor: pointer;
   font-family: inherit;
   color: #000000;
-  background: transparent;
 }
 .not-found {
   display: flex;
