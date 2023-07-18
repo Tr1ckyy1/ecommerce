@@ -125,7 +125,7 @@
 
 .nav-mobile-opened-container button {
   font-size: 3rem;
-  background: white;
+  background: transparent;
   border: none;
   align-self: flex-end;
   margin-top: 2rem;
