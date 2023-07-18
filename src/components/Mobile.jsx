@@ -14,7 +14,7 @@ function Mobile() {
         {cartItems.length > 0 ? (
           <div className="shopping-cart-amount">{cartItems.length}</div>
         ) : null}
-        <BsCart2 style={{ fontSize: "25px" }} />
+        <BsCart2 style={{ fontSize: "25px", color: "black" }} />
       </button>
       <div onClick={() => setOpenMenu(true)} className="burger-menu">
         <div className="menu-item"></div>

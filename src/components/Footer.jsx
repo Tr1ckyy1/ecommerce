@@ -34,7 +34,7 @@ function Footer() {
         </span>
       </h1>
       <h1>
-        Inspired by{" "}
+        Inspiration from{" "}
         <span>
           <Link target="_blank" to="https://github.com/stefvndev">
             Stefvndev

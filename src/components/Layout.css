@@ -109,7 +109,6 @@
   flex-direction: column;
   gap: 2rem;
   overflow: hidden;
-  border: 1px solid red;
   overflow-y: hidden;
 }
 .nav-mobile-opened-container .links {
