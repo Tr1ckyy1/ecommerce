@@ -26,12 +26,12 @@
 .close-cart {
   font-size: 2.3rem;
   border: none;
-  background: white;
+  background: transparent;
 }
 .close-cart:active,
 .close-cart:focus {
   border: none;
-  background: white;
+  background: transparent;
 }
 
 .closed {
@@ -130,6 +130,7 @@
 .calculate-cart-item-price button {
   font-size: 2rem;
   background: black;
+  border: 2px solid black;
   color: white;
   height: 3rem;
   width: 3rem;
