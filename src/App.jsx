@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Categories from "./pages/categories/Categories";
 import { ItemsProvider } from "./Context";
 import CategoriesCurrentItem from "./pages/categories/CategoriesCurrentItem";
+import NotFound from "./components/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
       <Route path="categories" element={<Categories />}></Route>
       <Route path="categories/:id" element={<CategoriesCurrentItem />} />
       <Route path="products" element={<h1>This is products</h1>}></Route>
-      <Route path="*" element={<h1>Page does not exist</h1>} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );

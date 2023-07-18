@@ -1,0 +1,51 @@
+.toast {
+  position: fixed;
+  left: 50%;
+  max-width: 30rem;
+  background: #373737;
+  top: -999px;
+  height: 50px;
+  padding: 10px;
+  color: white;
+  z-index: 999;
+  transform: translateX(-50%);
+}
+.toast.slide-in {
+  animation-duration: 4s;
+  animation-delay: -1s;
+  animation-name: slidein;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.toast h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+@keyframes slidein {
+  0% {
+    top: -100%;
+  }
+
+  40% {
+    top: 90px;
+  }
+
+  60% {
+    top: 90px;
+  }
+
+  100% {
+    top: -100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .toast {
+    min-width: 70%;
+  }
+}

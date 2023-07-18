@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Blinker", sans-serif;
-  padding-inline: 5rem;
   overflow-x: hidden;
 }
 
@@ -24,4 +23,34 @@ a {
 button {
   cursor: pointer;
   font-family: inherit;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.not-found h1 {
+  font-size: 4rem;
+}
+.not-found a {
+  border: 2px solid white;
+  background: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: 600;
+  transition: 0.15s;
+}
+
+.not-found a:hover {
+  border: 2px solid black;
+  background: white;
+  color: black;
 }

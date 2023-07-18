@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import banner from "../../images/banner/banner2.jpg";
+import { BsCart2 } from "react-icons/bs";
 
 function FinalSection() {
   return (
-    <section className="living">
+    <section className="living bottom-part">
       <div className="living-right">
         <img src={banner} />
       </div>

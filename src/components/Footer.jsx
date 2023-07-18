@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer>
+    <section className="footer">
       <div className="footer-links">
         <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           About
@@ -34,14 +34,14 @@ function Footer() {
         </span>
       </h1>
       <h1>
-        Source from{" "}
+        Inspired by{" "}
         <span>
           <Link target="_blank" to="https://github.com/stefvndev">
             Stefvndev
           </Link>
         </span>
       </h1>
-    </footer>
+    </section>
   );
 }
 

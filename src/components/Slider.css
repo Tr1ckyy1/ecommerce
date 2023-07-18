@@ -39,6 +39,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -52,7 +53,8 @@
   display: flex;
   border: none;
   flex-direction: column;
-  width: 215px;
+  gap: 1rem;
+  width: 235px;
   outline: 2px solid rgba(0, 0, 0, 0.205);
   outline-offset: -2px;
   padding: 1.5rem;
@@ -77,29 +79,3 @@
   width: 100%;
   object-fit: cover;
 }
-
-/* .item {
-  display: flex;
-  flex-direction: column;
-  outline: 2px solid rgba(0, 0, 0, 0.205);
-  outline-offset: -2px;
-  padding: 1.5rem;
-  transition: all 0.2s ease-out;
-  height: 100%;
-}
-.item:hover {
-  outline: 2px solid rgba(0, 0, 0, 0.7);
-}
-.item img {
-  width: 100%;
-}
-
-.item p {
-  font-size: 2rem;
-  margin-top: auto;
-}
-
-.item h1 {
-  font-size: 2.5rem;
-}
- */

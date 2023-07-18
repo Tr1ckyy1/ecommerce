@@ -1,15 +1,32 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useItems } from "../../Context";
 
 function CatCurrentTopSection({
   currentImage,
   currentItem,
   otherImages,
-  increase,
-  decrease,
-  quantity,
-  currentPrice,
   setCurrentImage,
+  id,
 }) {
+  const { addItem, quantity, setQuantity, currentPrice, setCurrentPrice } =
+    useItems();
+
+  function increase() {
+    setCurrentPrice((oldPrice) => oldPrice + currentItem.price);
+    setQuantity((oldQuantity) => oldQuantity + 1);
+  }
+
+  function decrease() {
+    if (quantity === 1) return;
+    setCurrentPrice((oldPrice) => oldPrice - currentItem.price);
+    setQuantity((oldQuantity) => oldQuantity - 1);
+  }
+
+  useEffect(() => {
+    setQuantity(1);
+    setCurrentPrice(currentItem.price);
+  }, [id]);
+
   return (
     <section className="product-top-container">
       <div className="left-side">
@@ -37,7 +54,12 @@ function CatCurrentTopSection({
             <h3 className="quantity-price">{currentPrice}.00$</h3>
           </div>
           <div className="shop-buttons">
-            <button className="btn-black add">add to cart</button>
+            <button
+              onClick={() => addItem(currentItem)}
+              className="btn-black add"
+            >
+              add to cart
+            </button>
             <button className="btn-buy">buy now</button>
           </div>
         </div>

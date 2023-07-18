@@ -7,6 +7,8 @@ import { useRef } from "react";
 
 function Slider({ currentItem, id = null, setCurrentImage }) {
   const { items } = useItems();
+  const wheelRefs = useRef(null);
+
   const itemsReels = currentItem
     ? items
         .filter((item) => item.category === currentItem.category)
@@ -15,8 +17,6 @@ function Slider({ currentItem, id = null, setCurrentImage }) {
         .slice()
         .sort(() => Math.random() - 0.5)
         .slice(0, 10);
-
-  const wheelRefs = useRef(null);
 
   function scroll(img) {
     window.scrollTo(0, 0);

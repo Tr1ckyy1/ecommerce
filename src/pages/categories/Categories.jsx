@@ -3,6 +3,7 @@ import { useItems } from "../../Context";
 import "./Categories.css";
 import { Link, useSearchParams } from "react-router-dom";
 import RenderItems from "../../components/RenderItems";
+import NotFound from "../../components/NotFound";
 
 function Categories() {
   const [searchParams, setSearchParams] = useSearchParams("");
@@ -28,7 +29,12 @@ function Categories() {
     <option key={item}>{item[0].toUpperCase() + item.slice(1)}</option>
   ));
 
-  const whichItems = type ? type : "ALL";
+  const whichQueryToRender = type ? type : "ALL";
+
+  const doesPageExist = items.some(
+    (item) => item.category === type?.toLowerCase()
+  );
+  if (type && !doesPageExist) return <NotFound />;
 
   return (
     <section>
@@ -39,8 +45,8 @@ function Categories() {
         >
           &larr; Home
         </Link>
-        {windowWidth > 600 && <h1>{whichItems}</h1>}
-        <select value={whichItems} onChange={handleFilterChange}>
+        {windowWidth > 600 && <h1>{whichQueryToRender}</h1>}
+        <select value={whichQueryToRender} onChange={handleFilterChange}>
           <option>{"All"}</option>
           {options}
         </select>

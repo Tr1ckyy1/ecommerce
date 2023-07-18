@@ -57,7 +57,7 @@
 .right-side {
   width: 50%;
   background: rgb(128, 128, 128, 0.25);
-  padding: 5rem;
+  padding: 5%;
 }
 
 .right-side .full-description {
@@ -69,34 +69,26 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  margin-top: 12rem;
+  margin-top: 20%;
 }
 .quantity-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  height: 5rem;
+  gap: 1rem;
+  font-size: 2.5rem;
 }
 .quantity {
   display: flex;
   border: 1px solid black;
-  height: 100%;
-  width: 33.3%;
-}
-.quant {
-  font-size: 2.5rem;
-  width: 33.3%;
 }
 
 .item-quantity {
-  font-size: 2.5rem;
   font-weight: 700;
   width: 5rem;
   border-right: 1px solid black;
   border-left: 1px solid black;
   background: transparent;
-  width: 33.3%;
 }
 
 .quantity button,
@@ -119,17 +111,16 @@
   background: transparent;
 }
 
+.quantity-price {
+  font-weight: 700;
+}
+
 .right-side h1 {
   position: absolute;
   left: 50%;
   top: 3.5rem;
   font-size: 3.2rem;
   transform: translateX(-50%);
-}
-
-.quantity-price {
-  font-weight: 700;
-  font-size: 3rem;
 }
 
 .shop-buttons {
@@ -175,15 +166,14 @@
 
 .product-mid-container {
   display: flex;
-  justify-content: space-between;
 
-  gap: 30px;
+  gap: 3rem;
 }
 
 .product-mid-container > div {
   padding: 2rem;
   font-size: 1.8rem;
-  width: 33.3%;
+  width: 100%;
   background: rgb(128, 128, 128, 0.25);
 }
 
@@ -200,5 +190,38 @@
   }
   .quantity-container {
     flex-direction: column;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .right-side h1 {
+    position: static;
+    transform: translateX(0);
+  }
+
+  .item-details-purchase {
+    margin-top: 10%;
+  }
+  /* .quantity-container {
+    flex-direction: column-reverse;
+  } */
+  .product-mid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .quantity-container {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .quantity-container {
+    flex-direction: column-reverse;
+  }
+  .right-side .quant {
+    display: none;
   }
 }

@@ -3,18 +3,18 @@ import "./Layout.css";
 import Header from "./Header";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
+
 function Layout() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main className="container">
         <Outlet />
       </main>
-
-      <Newsletter />
-      <Footer />
+      <footer>
+        <Newsletter />
+        <Footer />
+      </footer>
     </>
   );
 }
