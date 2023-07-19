@@ -12,7 +12,6 @@ function CategoriesCurrentItem() {
   const { id } = useParams();
 
   const doesPageExist = items.some((item) => item.id === Number(id));
-  console.log(doesPageExist);
   if (!doesPageExist) return <NotFound />;
 
   const currentItem = items.find((item) => item.id === Number(id));
