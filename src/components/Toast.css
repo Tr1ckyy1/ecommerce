@@ -31,9 +31,6 @@
     top: -100%;
   }
 
-  /* 0% {
-    top: 0;
-  } */
   40% {
     top: 90px;
   }
@@ -47,8 +44,7 @@
   }
 }
 
-@media (max-width: 600px) {
-}
+
 
 @media (max-width: 400px) {
   .toast h1 {
