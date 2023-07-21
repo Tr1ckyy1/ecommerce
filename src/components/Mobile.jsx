@@ -10,7 +10,7 @@ function Mobile() {
 
   return (
     <div className="nav-mobile">
-      <button  className="shopping-cart">
+      <button onClick={setOpenCart} className="shopping-cart">
         {cartItems.length > 0 ? (
           <div className="shopping-cart-amount">{cartItems.length}</div>
         ) : null}
