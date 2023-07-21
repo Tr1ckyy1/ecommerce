@@ -1,10 +1,8 @@
 .toast {
   position: fixed;
   left: 50%;
-  max-width: 30rem;
   background: #373737;
   top: -999px;
-  height: 50px;
   padding: 10px;
   color: white;
   z-index: 999;
@@ -16,6 +14,7 @@
   animation-name: slidein;
   animation-direction: alternate;
   animation-fill-mode: forwards;
+  transition: 0.9s;
 }
 
 .toast h1 {
@@ -24,6 +23,7 @@
   font-weight: 600;
   align-items: center;
   font-size: 1.8rem;
+  white-space: nowrap;
 }
 
 @keyframes slidein {
@@ -31,6 +31,9 @@
     top: -100%;
   }
 
+  /* 0% {
+    top: 0;
+  } */
   40% {
     top: 90px;
   }
@@ -45,9 +48,6 @@
 }
 
 @media (max-width: 600px) {
-  .toast {
-    min-width: 70%;
-  }
 }
 
 @media (max-width: 400px) {

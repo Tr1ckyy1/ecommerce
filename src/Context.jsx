@@ -25,7 +25,7 @@ function ItemsProvider({ children }) {
     setToast(true);
     setTimeout(() => {
       setToast(false);
-    }, 2500);
+    }, 1000);
   }
 
   useEffect(() => {
