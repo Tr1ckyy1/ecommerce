@@ -25,7 +25,7 @@ function Header() {
     <>
       {/* OVERLAY */}
       <div
-        onClick={setOpenCart}
+        onClick={() => setOpenCart(false)}
         className={`${openCart ? "page-overlay" : ""}`}
       ></div>
       {/* CART */}
