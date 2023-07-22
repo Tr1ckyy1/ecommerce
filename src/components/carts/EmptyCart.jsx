@@ -6,7 +6,7 @@ function EmptyCart() {
     <div className="empty-cart">
       <img src={EmptyCartImg} />
       <h2>Your cart is empty</h2>
-      <button onClick={() => setOpenCart((oldCart) => !oldCart)}>
+      <button onClick={() => setOpenCart(false)}>
         Keep Browsing
       </button>
     </div>
