@@ -24,9 +24,7 @@ function Desktop() {
       >
         furniture
       </Link>
-      <button onClick={
-        console.log("bla")
-      } className="shopping-cart">
+      <button onClick={() => setOpenCart(true)} className="shopping-cart">
         {cartItems.length > 0 ? (
           <div className="shopping-cart-amount">{cartItems.length}</div>
         ) : null}
