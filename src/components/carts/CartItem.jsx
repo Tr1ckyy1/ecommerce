@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { useItems } from "../../Context";
 
-function CartItem({ currentItem, subTotal, setSubTotal }) {
+function CartItem({ currentItem, setSubTotal }) {
   const { setCartItems } = useItems();
 
   const [cartPrice, setCartPrice] = useState(0);
