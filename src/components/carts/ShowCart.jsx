@@ -13,7 +13,10 @@ function ShowCart() {
         <h1>
           Your Shopping Cart ({cartItems.length} {length})
         </h1>
-        <button onClick={() => setOpenCart(false)} className="close-cart">
+        <button
+          onClick={() => setOpenCart((oldCart) => !oldCart)}
+          className="close-cart"
+        >
           <AiOutlineClose />
         </button>
       </div>
