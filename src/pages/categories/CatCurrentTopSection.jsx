@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useItems } from "../../Context";
 
 function CatCurrentTopSection({
@@ -25,7 +25,7 @@ function CatCurrentTopSection({
   useEffect(() => {
     setQuantity(1);
     setCurrentPrice(currentItem.price);
-  }, [id]);
+  }, [id, setQuantity, setCurrentPrice, currentItem.price]);
 
   return (
     <section className="product-top-container">

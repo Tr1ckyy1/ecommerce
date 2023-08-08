@@ -17,7 +17,7 @@ function CartItem({ currentItem, setSubTotal }) {
       if (doesItemExist) return [...newItems];
       return [...oldItems, { ...currentItem, cartPrice }];
     });
-  }, [cartPrice]);
+  }, [cartPrice, setSubTotal, currentItem]);
 
   useEffect(() => {
     setCartQuantity((oldQuantity) => oldQuantity + currentItem.quantity);
