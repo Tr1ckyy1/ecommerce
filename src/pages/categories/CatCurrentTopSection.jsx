@@ -25,7 +25,7 @@ function CatCurrentTopSection({
   useEffect(() => {
     setQuantity(1);
     setCurrentPrice(currentItem.price);
-  }, [id, setQuantity, setCurrentPrice, currentItem.price]);
+  }, [id, currentItem.price]);
 
   return (
     <section className="product-top-container">
