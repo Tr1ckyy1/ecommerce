@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useItems } from "../../Context";
 import "./Categories.css";
 import { Link, useSearchParams } from "react-router-dom";
@@ -12,7 +11,7 @@ function Categories() {
   const type = searchParams.get("type");
 
   // Set searchparams for filtering
-  function handleFilterChange(e, key) {
+  function handleFilterChange(e) {
     e.target.value === "All"
       ? setSearchParams("")
       : setSearchParams({ type: e.target.value });
@@ -23,6 +22,7 @@ function Categories() {
     : items;
 
   // Finding unique categories with set and converting back to arrays so its being mapped to render
+  
   const uniqueCategories = new Set(items.map((item) => item.category));
   const convertBackToArray = Array.from(uniqueCategories);
   const options = convertBackToArray.map((item) => (
