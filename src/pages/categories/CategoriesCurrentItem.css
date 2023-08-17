@@ -139,27 +139,32 @@
 }
 
 .btn-black {
-  background: transparent;
-  border: none;
-  color: black;
   border: 2px solid black;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .btn-black:hover {
-  background: black;
+  transition: 0.3s ease-in-out;
   color: white;
+  background-position: left;
 }
 
 .btn-buy {
-  background: #b6002c;
-  color: white;
+  background: linear-gradient(to right, white 50%, #b6002c 50%);
   border: 2px solid #b6002c;
+  color: white;
+  background-size: 200% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .btn-buy:hover {
-  border: 2px solid #b6002c;
-  background: white;
   color: #b6002c;
+  transition: 0.3s ease-in-out;
+  background-position: left;
 }
 
 /* MID SECTION */
