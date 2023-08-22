@@ -135,7 +135,7 @@
   height: 5.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  transition: all 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-black {
@@ -147,7 +147,6 @@
 }
 
 .btn-black:hover {
-  transition: 0.3s ease-in-out;
   color: white;
   background-position: left;
 }
@@ -163,7 +162,6 @@
 
 .btn-buy:hover {
   color: #b6002c;
-  transition: 0.3s ease-in-out;
   background-position: left;
 }
 

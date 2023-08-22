@@ -68,11 +68,11 @@
   background-size: 200% 100%;
   background-repeat: no-repeat;
   background-position: right;
+  transition: 0.3s ease-in;
 }
 .empty-cart button:hover {
   color: white;
   background-position: left;
-  transition: 0.3s ease-in;
 }
 
 .empty-cart img {
@@ -179,10 +179,10 @@
   background-size: 200% 100%;
   background-repeat: no-repeat;
   background-position: right;
+  transition: 0.3s ease-in;
 }
 .subtotal-amount button:hover {
   color: white;
-  transition: 0.3s ease-in;
   background-position: left;
 }
 
